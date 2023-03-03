@@ -113,6 +113,7 @@ header i img{
     margin: 0 30px;
     background: var(--bg-white);
     color: var(--bg-black);
+    box-shadow: .2rem .2rem black;
 }
 
 #card > h2:first-of-type{
@@ -189,3 +190,28 @@ header i img{
     height: 100%;
     transform: rotateY(180deg);
   }
+
+  /* section about */
+
+  #about{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  #about h2{
+    margin-bottom: 20px;
+  }
+  #about p{
+    margin-bottom: 20px;
+  }
+  #about #iconsSkill{
+    display: flex;
+    gap: 30px;
+}
+
+#about .icone-skill{
+    width: 80px;
+    height: 80px;
+}
