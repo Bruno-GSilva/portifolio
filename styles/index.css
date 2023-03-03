@@ -196,7 +196,7 @@ header i img{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 350px;
   }
 
   #about h2{
@@ -209,6 +209,7 @@ header i img{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 250px;
 }
 
 #about .icone-skill{
