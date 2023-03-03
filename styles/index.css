@@ -39,11 +39,11 @@ header{
 }
 
 section{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     /* transition: all 1.5s; */
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     justify-content: center;
     align-items: center;
     color: var(--bg-white);
@@ -192,12 +192,11 @@ header i img{
   }
 
   /* section about */
-
-  #about{
+  #about-skills{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin: 0 30px;
+    max-width: 250px;
   }
 
   #about h2{
@@ -208,6 +207,7 @@ header i img{
   }
   #about #iconsSkill{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
