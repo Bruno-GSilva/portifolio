@@ -283,8 +283,8 @@ header i img {
   justify-content: flex-end;
 }
 .cards_works > .icons > span{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
 .cards_works > .icons > span > a >img{
   width: 100%;
