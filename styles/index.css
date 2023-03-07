@@ -289,7 +289,7 @@ header i img {
 .cards_works > .icons > span > a >img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .cards_works > .icons *:hover {
   scale: 1.1;
