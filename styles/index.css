@@ -113,6 +113,7 @@ header i img {
   margin-top: 150px;
   color: #22007c;
 }
+#card > h2:last-of-type
 
 .flip-card {
   background-color: transparent;
@@ -191,8 +192,11 @@ header i img {
   margin-top: 30px;
 }
 
-#about h2 {
+#about h2{
   margin-bottom: 20px;
+}
+#about h2:last-of-type{
+  margin-bottom: 30px;
 }
 #about p {
   margin-bottom: 20px;
@@ -225,10 +229,9 @@ header i img {
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
-  padding: 50px;
-  gap: 30px;
 }
 .cards_works {
+  margin: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -298,9 +301,7 @@ header i img {
 .cards_works > .icons > span:first-of-type {
   margin-right: 15px;
 }
-.cards_works:nth-child(1) {
-  margin-top: 30px;
-}
+
 .cards_works:nth-child(3) {
   justify-content: center;
   align-items: center;
