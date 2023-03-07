@@ -314,7 +314,10 @@ section > #contatos{
 
   background-color: var(--bg-blueBase);
 }
+section > #contatos > .icons_footer *{
+  scale: .8;
+}
 section > #contatos > .icons_footer *:hover{
-  scale: 1.1;
+  scale: .9;
   cursor: pointer;
 }
