@@ -282,12 +282,20 @@ header i img {
   align-items: center;
   justify-content: flex-end;
 }
-
+.cards_works > .icons > span{
+  width: 20px;
+  height: 20px;
+}
+.cards_works > .icons > span > a >img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .cards_works > .icons *:hover {
   scale: 1.1;
 }
 
-.cards_works > .icons > img:first-of-type {
+.cards_works > .icons > span:first-of-type {
   margin-right: 15px;
 }
 .cards_works:nth-child(1) {
@@ -297,7 +305,9 @@ header i img {
   justify-content: center;
   align-items: center;
 }
-
+.cards_works:nth-child(3) > span:hover{
+  transform: rotate(45deg);
+}
 /* contatos */
 
 section > #contatos{
