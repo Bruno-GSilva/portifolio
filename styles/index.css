@@ -314,7 +314,7 @@ header > i > img {
 }
 /* contatos */
 
-section > #contatos{
+footer > #contatos{
   position: absolute;
   left: 0;
   bottom: 0;
@@ -328,10 +328,10 @@ section > #contatos{
 
   background-color: var(--bg-blueBase);
 }
-section > #contatos > .icons_footer *{
+footer > #contatos > .icons_footer *{
   scale: .8;
 }
-section > #contatos > .icons_footer *:hover{
+footer > #contatos > .icons_footer *:hover{
   scale: .9;
   cursor: pointer;
 }
