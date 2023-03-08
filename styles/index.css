@@ -107,14 +107,12 @@ header i img {
   display: none;
 }
 #card > h3 {
-  display: none;
+  display: none;  
 }
 #card > h2:last-of-type {
   margin-top: 150px;
   color: #22007c;
 }
-#card > h2:last-of-type
-
 .flip-card {
   background-color: transparent;
   width: 254px;
