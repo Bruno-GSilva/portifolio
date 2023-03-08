@@ -75,16 +75,16 @@ header > nav > ul > li a {
   font-weight: 700;
 }
 /* menu responsivo */
-header i {
+header > i {
   z-index: 20;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
-header i.active {
+header > i.active {
   rotate: 90deg;
 }
-header i img {
+header > i > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -203,7 +203,6 @@ header i img {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  /* overflow: hidden; */
   cursor: pointer;
   margin-bottom: 30px;
 }
