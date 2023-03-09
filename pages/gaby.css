@@ -1,4 +1,5 @@
 @import url(/styles/reset.css);
+@import url(/styles/index.css);
 
 #egg {
   width: 100%;
