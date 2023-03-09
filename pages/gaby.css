@@ -26,7 +26,7 @@
   height: 80px;
   border: 1px solid black;
   border-radius: 10px;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: green;
   margin-bottom: 30px;
   cursor: pointer;

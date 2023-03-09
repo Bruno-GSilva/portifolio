@@ -29,6 +29,7 @@ header {
   display: flex;
   align-items: flex-start;
   height: auto;
+  padding: 30px;
 }
 
 #contact {
@@ -49,9 +50,7 @@ header > span > a > img {
 }
 
 /* navbar */
-header > nav {
-  display: none;
-}
+
 header > nav.active {
   display: flex;
   justify-content: center;
@@ -63,12 +62,18 @@ header > nav.active {
   left: 0;
   top: 0;
 }
-
+#navbar > a {
+  display: none;
+}
+#navbar > ul {
+  margin-right: 30px;
+}
 header > nav > ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
 }
+
 header > nav > ul > li a {
   color: var(--bg-white);
   font-size: 26px;
@@ -80,6 +85,7 @@ header > i {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  display: none;
 }
 header > i.active {
   rotate: 90deg;
@@ -96,22 +102,20 @@ header > i > img {
   flex-direction: column;
   justify-content: center;
   border-radius: 25px;
-  padding: 15px;
+  padding: 30px;
   margin: 0 30px;
   background: var(--bg-white);
   color: var(--bg-black);
   box-shadow: 0.2rem 0.2rem black;
 }
 
-#card > h2:first-of-type {
-  display: none;
-}
 #card > h3 {
-  display: none;  
+  margin-bottom: 30px;
 }
 #card > h2:last-of-type {
-  margin-top: 150px;
   color: #22007c;
+  max-width: 300px;
+  margin-right: 300px;
 }
 .flip-card {
   background-color: transparent;
@@ -120,7 +124,8 @@ header > i > img {
   perspective: 1000px;
   font-family: sans-serif;
   position: absolute;
-  bottom: 130px;
+  bottom: 60px;
+  left: 300px;
   margin: 0 10%;
 }
 
@@ -179,42 +184,42 @@ header > i > img {
 }
 
 /* section about */
-
 #about-skills {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  max-width: 350px;
   margin-top: 30px;
 }
-
-#about h2{
+#about-skills{
+  max-width: none;
+}
+#about h2 {
   margin-bottom: 20px;
 }
-#about h2:last-of-type{
+#about h2:last-of-type {
   margin-bottom: 30px;
 }
 #about p {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 #about-skills > #iconsSkill {
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   cursor: pointer;
   margin-bottom: 30px;
 }
-#about-skills > #iconsSkill > span{
+#about-skills > #iconsSkill > span {
   position: relative;
   width: 80px;
   height: 80px;
 }
-#about-skills > #iconsSkill > span:hover{
+#about-skills > #iconsSkill > span:hover {
   scale: 1.1;
 }
-#about-skills > #iconsSkill > span > img{
+#about-skills > #iconsSkill > span > img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -223,15 +228,17 @@ header > i > img {
 #about-skills > #iconsSkill > span:nth-child(5) {
   background-color: #ffffff;
   border-radius: 100%;
-  border: none;
+  border: 3px solid black;
+  overflow: hidden;
 }
+
 /* section works */
 
 #cards {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr; 
 }
 .cards_works {
   margin: 30px;
@@ -288,11 +295,11 @@ header > i > img {
   align-items: center;
   justify-content: flex-end;
 }
-.cards_works > .icons > span{
+.cards_works > .icons > span {
   width: 50px;
   height: 50px;
 }
-.cards_works > .icons > span > a >img{
+.cards_works > .icons > span > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -305,33 +312,86 @@ header > i > img {
   margin-right: 15px;
 }
 
-.cards_works:nth-child(3) {
+.cards_works:nth-child(3) , .cards_works:nth-child(4) , .cards_works:nth-child(5) , .cards_works:nth-child(6) {
   justify-content: center;
   align-items: center;
 }
-.cards_works:nth-child(3) > span:hover{
+.cards_works:nth-child(3) > span:hover {
   transform: rotate(45deg);
 }
 /* contatos */
 
-footer > #contatos{
+footer > #contatos {
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 16rem;
-  padding: 10px 30px;
+  /* height: 16rem; */
+  padding: 0px 30px;
   align-items: center;
   gap: 10px;
 
   background-color: var(--bg-blueBase);
 }
-footer > #contatos > .icons_footer *{
-  scale: .8;
+footer > #contatos > .icons_footer * {
+  scale: 0.8;
 }
-footer > #contatos > .icons_footer *:hover{
-  scale: .9;
+footer > #contatos > .icons_footer *:hover {
+  scale: 0.9;
   cursor: pointer;
 }
+
+
+
+
+@media (max-width: 480px) {
+  #about-skills > #iconsSkill{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header > nav {
+    display: none;
+  }
+  header > nav > ul {
+    flex-direction: column;
+  }
+  #menu {
+    display: block;
+  }
+  #card > h2:first-of-type {
+    display: none;
+  }
+  #card > h3 {
+    display: none;
+  }
+  #card > h2:last-of-type {
+    margin-top: 100px;
+    margin-right: 0%;
+  }
+  #card > div {
+    left: 15px;
+    bottom: 140px;
+  }
+  #navbar > ul{
+    margin-right: 0;
+  }
+  #navbar > a {
+    display: block;
+  }
+  #about-skills{
+    max-width: 400px;
+  }
+  #about{
+    padding: 0;
+  }
+  
+  #cards{
+    grid-template-columns: 1fr;
+  }
+}
+  
+
+/* @media (max-width: 768px){
+
+} */
