@@ -69,11 +69,11 @@
   object-fit: contain;
 }
 #egg > #card_gaby > #visor > span{
-  z-index: 0;
+  z-index: 1;
   display: block;
 }
 
-#egg > #card_gaby > input {
+#egg > #card_gaby > form >input {
   width: 100%;
 }
 #btn{
