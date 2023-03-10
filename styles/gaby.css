@@ -92,3 +92,9 @@
 #btn:hover{
   background-color: brown;
 }
+
+#card_gaby > form > label{
+  font-size: 10px;
+  transition: linear 1.5s;
+}
+

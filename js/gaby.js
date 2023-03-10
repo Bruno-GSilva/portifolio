@@ -3,6 +3,7 @@ const spanScreenGame = screenGame.querySelectorAll("span");
 const form = document.querySelector("form");
 const input = document.getElementById("digitar");
 const btn = document.getElementById("btn");
+const resposta = document.querySelector("#card_gaby > form > label");
 
 const hit = []; //quando clicar adicionar um hit , e ela vai ficando mais puta (3) medio (5) max.
 
@@ -15,19 +16,19 @@ const defaultAnswers = {
     "meu nome é gaby",
     "fui criada 08/03/2023, então minha idade é ... é ... não sei, faz as contas aê",
   ],
-  normal: [
+  nivel1: [
     // `Essa ai é facil${response}, manda uma mais dificil.`,
     `Essa não existe você que inventou!`,
     `uee essa nem eu sabia vivendo e aprendendo.`,
     // `Essa eu sei é ${response} né?`,
   ],
 
-  mid: [
+  nivel2: [
     `tá me zoando? porque se você estiver!!`,
     `Essa eu seii, mas não vou te dizer!`,
   ],
 
-  angry: [
+  nivel3: [
     `Essa dai eu não vou nem responder de tão idiota que é.`,
     `Hmm...Sei lá.`,
     `Seii naumm ... e nem quero saber!!`,
@@ -44,7 +45,7 @@ const defaultAnswers = {
   extra: [`Não sei`, `Você que sabe`, `Tanto faz`, `Qualquer coisa`], //modo namorada!
 };
 
-const { creator, normal, mid, angry } = defaultAnswers;
+const { creator, nivel1, nivel2, nivel3 } = defaultAnswers;
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
@@ -76,14 +77,14 @@ form.addEventListener("submit", (event) => {
   if (palavras.includes(input.value)) {
     console.log("responder");
   } else {
-    let responseNormal = random(0, defaultAnswers.normal.length);
-    normal[responseNormal];
+    let responseNormal = random(0, defaultAnswers.nivel1.length);
+    nivel1[responseNormal];
   }
 });
 
 function tempoResposta(valor) {
   setTimeout(() => {
-    console.log(valor);
+    resposta.innerHTML = valor
   }, 1000);
 }
 
