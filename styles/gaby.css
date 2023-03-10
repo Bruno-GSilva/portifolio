@@ -32,7 +32,7 @@
   cursor: pointer;
   box-shadow: inset 0.2rem 0.2rem black;
 }
-#egg > #card_gaby > #visor::after {
+/* #egg > #card_gaby > #visor::after {
   position: absolute;
   content: " ";
   left: 0;
@@ -41,7 +41,7 @@
   height: 100%;
   background-color: blue;
   opacity: 0.3;
-}
+} */
 #egg > #card_gaby > #visor::before {
   position: absolute;
   content: " ";
@@ -68,18 +68,27 @@
   height: 100%;
   object-fit: contain;
 }
-#egg > #card_gaby > #visor > span:nth-child(1) {
-  z-index: 1;
-  /* display: none; */
+#egg > #card_gaby > #visor > span{
+  z-index: 0;
+  display: block;
 }
-#egg > #card_gaby > #visor > span:nth-child(2) {
-  z-index: 2;
-  display: none;
-}
-#egg > #card_gaby > #visor > span:nth-child(3) {
-  z-index: 3;
-  display: none;
-}
+
 #egg > #card_gaby > input {
   width: 100%;
+}
+#btn{
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  box-shadow: .1rem .1rem black;
+  font-family: fantasy;
+  letter-spacing: .5px;
+  color: white;
+  cursor: pointer;
+}
+#btn:hover{
+  background-color: brown;
 }
